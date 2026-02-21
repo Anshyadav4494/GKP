@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURELIA | Ultra-Luxury Real Estate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="logo-reveal">
+                <span class="logo-text">GKPropsolutions</span>
+                <div class="logo-line"></div>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="../image/LOGO.png" alt="GK Prop Solutions" style="height: 50px;">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#properties" class="nav-link">Properties</a></li>
+                <li><a href="#experience" class="nav-link">About</a></li>
+                <li><a href="#testimonials" class="nav-link">Stories</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="../properties.html" class="nav-cta">View All Properties</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero"
+        style="background: url('https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1920&q=80') center/cover;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Find Your Dream Property</h1>
+            <p class="hero-description">Discover premium real estate investments with expert guidance</p>
+
+            <div class="search-container">
+                <div class="search-inputs">
+                    <div class="search-field">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" placeholder="Location">
+                    </div>
+                    <div class="search-field">
+                        <i class="fas fa-rupee-sign"></i>
+                        <select>
+                            <option value="">Budget</option>
+                            <option value="1">Under 1 Cr</option>
+                            <option value="2">1 Cr - 5 Cr</option>
+                            <option value="3">5 Cr+</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <i class="fas fa-home"></i>
+                        <select>
+                            <option value="">Property Type</option>
+                            <option value="apt">Apartment</option>
+                            <option value="villa">Villa</option>
+                            <option value="plot">Plot</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="btn-search">
+                    <i class="fas fa-search"></i>
+                    <span>Search</span>
+                </button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section id="properties" class="properties">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Curated Collection</span>
+                <h2 class="section-title">Featured Estates</h2>
+                <p class="section-subtitle">Handpicked properties that redefine luxury living</p>
+            </div>
+
+            <div class="properties-grid">
+                <div class="property-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80"
+                            alt="Modern Villa">
+                        <div class="property-badge">Exclusive</div>
+                        <div class="property-overlay">
+                            <button class="view-details-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="property-info">
+                        <h3>The Glass Pavilion</h3>
+                        <p class="location">Beverly Hills, California</p>
+                        <div class="property-meta">
+                            <span class="price">$28,500,000</span>
+                            <span class="specs">6 Beds • 8 Baths • 12,000 sqft</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80"
+                            alt="Luxury Mansion">
+                        <div class="property-badge">New Listing</div>
+                        <div class="property-overlay">
+                            <button class="view-details-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="property-info">
+                        <h3>Azure Horizon Estate</h3>
+                        <p class="location">Malibu, California</p>
+                        <div class="property-meta">
+                            <span class="price">$42,000,000</span>
+                            <span class="specs">8 Beds • 10 Baths • 15,500 sqft</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80"
+                            alt="Penthouse">
+                        <div class="property-badge">Penthouse</div>
+                        <div class="property-overlay">
+                            <button class="view-details-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="property-info">
+                        <h3>Sky Residence One</h3>
+                        <p class="location">Manhattan, New York</p>
+                        <div class="property-meta">
+                            <span class="price">$65,000,000</span>
+                            <span class="specs">5 Beds • 6 Baths • 8,200 sqft</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80"
+                            alt="Waterfront Villa">
+                        <div class="property-badge">Waterfront</div>
+                        <div class="property-overlay">
+                            <button class="view-details-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="property-info">
+                        <h3>Crystal Bay Villa</h3>
+                        <p class="location">Miami Beach, Florida</p>
+                        <div class="property-meta">
+                            <span class="price">$38,900,000</span>
+                            <span class="specs">7 Beds • 9 Baths • 14,000 sqft</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3D Property Viewer -->
+    <section id="viewer" class="viewer-section">
+        <div class="viewer-container">
+            <div class="viewer-info" data-aos="fade-right">
+                <span class="section-label">Virtual Experience</span>
+                <h2>Immersive 3D Tours</h2>
+                <p>Experience properties in unprecedented detail with our photorealistic 3D visualization technology.
+                </p>
+                <div class="viewer-controls">
+                    <button class="control-btn active" data-mode="day">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5" />
+                            <path
+                                d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                        </svg>
+                        Day
+                    </button>
+                    <button class="control-btn" data-mode="night">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                        </svg>
+                        Night
+                    </button>
+                </div>
+                <div class="viewer-instructions">
+                    <div class="instruction">
+                        <span class="icon">🖱️</span>
+                        <span>Drag to rotate</span>
+                    </div>
+                    <div class="instruction">
+                        <span class="icon">🔍</span>
+                        <span>Scroll to zoom</span>
+                    </div>
+                </div>
+            </div>
+            <div class="viewer-canvas-container" data-aos="fade-left">
+                <canvas id="property-viewer"></canvas>
+                <div class="viewer-loading">
+                    <div class="spinner"></div>
+                    <span>Loading 3D Model...</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Luxury Experience -->
+    <section id="experience" class="experience">
+        <div class="experience-bg"></div>
+        <div class="container">
+            <div class="experience-content">
+                <div class="experience-text" data-aos="fade-right">
+                    <span class="section-label">The Aurelia Difference</span>
+                    <h2>Crafting Exceptional Living Experiences</h2>
+                    <p>With over two decades of expertise in ultra-luxury real estate, we understand that acquiring an
+                        exceptional property is about more than square footage—it's about discovering a lifestyle that
+                        reflects your achievements and aspirations.</p>
+                    <p>Our global network provides access to off-market opportunities and exclusive listings unavailable
+                        to the general public.</p>
+                </div>
+                <div class="stats-grid" data-aos="fade-left">
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="500">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Luxury Estates Sold</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="2.8">0</span>
+                        <span class="stat-suffix">B</span>
+                        <span class="stat-label">In Sales Volume</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="45">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Global Markets</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="98">0</span>
+                        <span class="stat-suffix">%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Client Stories</span>
+                <h2 class="section-title">Words of Distinction</h2>
+            </div>
+
+            <div class="testimonials-carousel" data-aos="fade-up">
+                <div class="testimonials-track">
+                    <div class="testimonial-card">
+                        <div class="quote-icon">"</div>
+                        <p class="testimonial-text">Aurelia transformed what could have been a stressful process into an
+                            absolute pleasure. Their attention to detail and discretion is unmatched in the industry.
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80"
+                                alt="Client">
+                            <div class="author-info">
+                                <h4>Alexander Chen</h4>
+                                <span>Tech Entrepreneur</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="quote-icon">"</div>
+                        <p class="testimonial-text">They understood exactly what we were looking for before we even knew
+                            ourselves. The property they found exceeded every expectation.</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80"
+                                alt="Client">
+                            <div class="author-info">
+                                <h4>Victoria Ashford</h4>
+                                <span>Investment Banker</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="quote-icon">"</div>
+                        <p class="testimonial-text">The level of service Aurelia provides is simply extraordinary. From
+                            private viewings to closing, every moment was handled with impeccable professionalism.</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80"
+                                alt="Client">
+                            <div class="author-info">
+                                <h4>James Worthington</h4>
+                                <span>Private Equity Director</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <span class="section-label">Begin Your Journey</span>
+                    <h2>Let's Discuss Your Vision</h2>
+                    <p>Whether you're seeking your next exceptional residence or looking to list your property with the
+                        world's most discerning clientele, we're here to assist.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <div>
+                                <h4>Flagship Office</h4>
+                                <p>9900 Wilshire Blvd, Beverly Hills, CA 90210</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                            <div>
+                                <h4>Private Line</h4>
+                                <p>+1 (310) 555-0199</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            <div>
+                                <h4>Email</h4>
+                                <p>private@aureliaestates.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" required placeholder=" ">
+                            <label for="name">Full Name</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required placeholder=" ">
+                            <label for="email">Email Address</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder=" ">
+                            <label for="phone">Phone Number</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <select id="interest" required>
+                                <option value="">Area of Interest</option>
+                                <option value="buying">Purchasing a Property</option>
+                                <option value="selling">Selling a Property</option>
+                                <option value="investment">Investment Opportunities</option>
+                                <option value="rental">Luxury Rentals</option>
+                            </select>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" placeholder=" "></textarea>
+                            <label for="message">Your Message</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <span>Send Inquiry</span>
+                            <div class="btn-glow"></div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.0!2d-118.408!3d34.067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDA0JzAxLjIiTiAxMTjCsDI0JzI4LjgiVw!5e0!3m2!1sen!2sus!4v1234567890"
+                width="100%" height="400" style="border:0; filter: grayscale(100%) invert(92%) contrast(83%);"
+                allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="../image/LOGO.png" alt="GK Prop Solutions" style="height: 40px;">
+                    </a>
+                    <p>Curating exceptional properties for exceptional lives since 2003.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Twitter">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#properties">Properties</a></li>
+                        <li><a href="#experience">About Us</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Markets</h4>
+                    <ul>
+                        <li><a href="#">Beverly Hills</a></li>
+                        <li><a href="#">Malibu</a></li>
+                        <li><a href="#">Manhattan</a></li>
+                        <li><a href="#">Miami</a></li>
+                        <li><a href="#">Aspen</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Buyer's Representation</a></li>
+                        <li><a href="#">Seller's Representation</a></li>
+                        <li><a href="#">Property Management</a></li>
+                        <li><a href="#">Investment Advisory</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aurelia Real Estate. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Property Modal -->
+    <div class="modal" id="propertyModal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <div class="modal-gallery">
+                    <img src="" alt="Property" id="modalImage">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle">Property Title</h2>
+                    <p class="modal-location" id="modalLocation">Location</p>
+                    <p class="modal-price" id="modalPrice">Price</p>
+                    <div class="modal-specs" id="modalSpecs"></div>
+                    <p class="modal-description">Experience unparalleled luxury in this stunning estate featuring
+                        panoramic views, state-of-the-art amenities, and exquisite architectural details throughout.</p>
+                    <button class="btn-primary modal-cta">Schedule Private Viewing</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Actions -->
+    <div class="floating-actions">
+        <a href="tel:+13105550199" class="float-btn call" title="Call Us">
+            <i class="fas fa-phone"></i>
+        </a>
+        <a href="https://wa.me/13105550199" class="float-btn whatsapp" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="#contact" class="float-btn inquiry" title="Send Inquiry">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
